@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+h1{
+  margin: 1rem;
+  font-size: 2.6rem;
+}
+
+h2 {
+  margin-top: 1rem;
+}
+
+.players {
+  width: 100%;
+  margin: .1rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem ;
+  padding: .2rem;
+}
+
+.players #player1{
+  margin-right: 25rem;
+  padding: .2rem;
+  font-size: 1rem;
+}
+
+.players #player2{
+  padding: .2rem;
+  font-size: 1rem;
+}
+
+#start, #theme{
+  margin:.5rem 0rem .2rem;
+  width: 8rem;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+#board {
+  background-color:#393636;
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-template-rows: 8rem 8rem 8rem;
+  gap: .5rem;
+  margin-top: 3.7rem;
+  max-width: 28rem;
+}
+
+#board span {
+  background-color: #ffffff;
+  display: grid;
+  place-content: center;
+  font-size: 5rem;
+}
+
+#board span.win {
+  background-color: #25a340;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

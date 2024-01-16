@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+  <title>Jogo da Velha</title>
+</head>
+<body data-theme="ligth">
+    <header>
+      <h1>Jogo da Velha</h1>
+    </header>
+    
+    <section class="players">
+      <label for="player1">Jogador um ( X ):</label>
+      <input type="text" name="player1" id="player1" placeholder="Jogador">
+
+      <label for="player2">Jogador dois ( O ):</label>
+      <input type="text" name="player2" id="player2" placeholder="Jogador">
+    </section>
+
+    <button id="start">Iniciar</button>
+    <button id="lightTheme">Mudar tema</button>
+
+    <h2>Vez de: <span id="turnPlayer"></span></h2>
+
+    <section id="board">
+      <span class="cursor-pointer" data-coordinate="0.0"></span>
+      <span class="cursor-pointer" data-coordinate="0.1"></span>
+      <span class="cursor-pointer" data-coordinate="0.2"></span>
+      <span class="cursor-pointer" data-coordinate="1.0"></span>
+      <span class="cursor-pointer" data-coordinate="1.1"></span>
+      <span class="cursor-pointer" data-coordinate="1.2"></span>
+      <span class="cursor-pointer" data-coordinate="2.0"></span>
+      <span class="cursor-pointer" data-coordinate="2.1"></span>
+      <span class="cursor-pointer" data-coordinate="2.2"></span>
+    </section>
+</body>
+</html>
